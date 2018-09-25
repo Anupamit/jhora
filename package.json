@@ -1,20 +1,22 @@
 {
-  "name": "jhora",
-  "productName": "jhora",
-  "description": "jhora",
-  "version": "1.0.0",
+  "name": "Jhora",
+  "productName": "Jhora",
+  "description": "Jhora",
+  "version": "1.2.0",
   "author": "Anoop Kumar <optimistanoopr@gmail.com>",
   "copyright": "© 2018, KF Daniyari.",
-  "homepage": "http://example.com",
+  "homepage": "https://github.com/optimistanoop/jhora",
   "license": "MIT",
-  "main": "app/app.js",
+  "main": "app.js",
   "build": {
     "appId": "com.example.electron-boilerplate-sqlite",
     "files": [
-      "app/**/*",
+      "**/*",
       "node_modules/**/*",
-      "package.json"
-    ]
+      "package.json",
+      "*"
+    ],
+    "icon":"./images/logo.ico"
   },
   "scripts": {
     "postinstall": "install-app-deps",
