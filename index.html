@@ -2,6 +2,15 @@
 <html>
   <head>
   </head>
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <link rel="manifest" href="./manifest.json" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#106CC8">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#106CC8">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#106CC8">
+
     <link rel="stylesheet" href="./lib/font.css">
     <link rel="stylesheet" href="./lib/icon.css">
     <link rel="stylesheet" href="./lib/angular-material.min.css">
@@ -30,6 +39,8 @@
     <script src="./lib/angular-aria.min.js"></script>
     <script src="./lib/angular-messages.min.js"></script>
     <script src="./lib/angular-material.min.js"></script>
+    <script src="./lib/Chart.min.js"></script>
+    <script src="./lib/firebase.js"></script>
     <script src="./jhora.js"></script>
     <script src="./customer/addCustomerCtrl.js"></script>
     <script src="./customer/viewCustomerCtrl.js"></script>
@@ -42,7 +53,11 @@
     <script src="./village/addViewVillageCtrl.js"></script>
     <script src="./dashboard/dashboardCtrl.js"></script>
     <script src="./setting/settingCtrl.js"></script>
+    <script src="./stats/statsCtrl.js"></script>
     <!-- this db.js will always be the last dependency added -->
+    <script src="./FirebaseQuery.js"></script>
+    <script src="./sqliteWrapper.js"></script>
+    <script src="./query.js"></script>
     <script src="./db.js"></script>
   </body>
 </html>

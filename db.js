@@ -1,6 +1,6 @@
 let q;
 let dbInit = ()=>{
-  let Query = require('./query.js');
+  //let Query = require('./query.js');
   let sqlite3 = require('sqlite3').verbose();
   const {app} = require('electron').remote;
   const path = require('path');
@@ -43,4 +43,10 @@ let dbInit = ()=>{
   
 };
 
-dbInit();
+if(isElectron()){
+  dbInit()
+} else{
+  //q = new FirebaseWrapper();
+  q = new Query(new SQLiteWrapper());
+  angular.bootstrap(document, ['jhora']);
+}
